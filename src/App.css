@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 16px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.warning:hover {
+  color: red; /* Color on hover */
+}
