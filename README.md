@@ -4,7 +4,8 @@ Steps to run React:
 2. npm install
 3. Create file named .env
 4. Copy contents of .env.example to .env
-5. npm start
+5. Ensure backend Express is running first
+6. npm start
 
 Create Product
 <img width="883" alt="Screenshot 2024-07-14 at 7 41 40 PM" src="https://github.com/user-attachments/assets/07d2fddb-6075-4510-a5e3-ef421e04eff9">
