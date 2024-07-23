@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import { Avatar, Breadcrumb, Layout, Menu, Typography } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import ProductForm from './components/products/ProductForm';
+import VehiclesList from './components/vehicles/VehiclesList';
 
 const { Header, Footer, Sider, Content } = Layout;
 const { Text } = Typography;
@@ -28,6 +29,9 @@ function App() {
             <Menu.Item key="/products">
               <Link to="/products" onClick={() => setSelectedKey('/products')}>Products</Link>
             </Menu.Item>
+            <Menu.Item key="/vehicles">
+              <Link to="/vehicles" onClick={() => setSelectedKey('/vehicles')}>Vehicles</Link>
+            </Menu.Item>
             {/* <Menu.Item key="/brands">
               <Link to="/brands" onClick={() => setSelectedKey('/brands')}>Brands</Link>
             </Menu.Item> */}
@@ -42,6 +46,7 @@ function App() {
           <Routes>
             <Route path="/products" element={<ProductsList />} />
             <Route path="/products/:id" element={<ProductForm />} />
+            <Route path="/vehicles" element={<VehiclesList />} />
             {/* <Route path="/brands" element={<ProductForm />} /> */}
           </Routes>
         </Content>
